@@ -37,7 +37,6 @@
 		C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
 		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
 		CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
-		CAB76CEA17651AA31406736089B5F480 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E11C30D03C3293AA15E43396B820DB7 /* ReplaceMe.swift */; };
 		FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -70,7 +69,6 @@
 		08C5E7074A9DB7093420DA8F71A5708C /* Pods-sdk-pod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-sdk-pod_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		0D4FCF6FE176896428577181BCE4E36B /* sdk-pod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "sdk-pod-dummy.m"; sourceTree = "<group>"; };
 		0DECE6FE1A74C2D3B7BD7176D88D778A /* Pods-sdk-pod_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-sdk-pod_Example"; path = Pods_sdk_pod_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E11C30D03C3293AA15E43396B820DB7 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = "sdk-pod/Classes/ReplaceMe.swift"; sourceTree = "<group>"; };
 		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -224,7 +222,6 @@
 		535AF25AE5BDCC7CF767D8003C0B1E45 /* sdk-pod */ = {
 			isa = PBXGroup;
 			children = (
-				0E11C30D03C3293AA15E43396B820DB7 /* ReplaceMe.swift */,
 				4FEF9E952B3F3F130076E175 /* HelloWorld.swift */,
 				CA81510D98AB7AE2D4B5E444C62C3457 /* Pod */,
 				251D9BE9920275DB202BEE882206EB9B /* Support Files */,
@@ -562,7 +559,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAB76CEA17651AA31406736089B5F480 /* ReplaceMe.swift in Sources */,
 				5C0B0FC96D8BDE763F35499C5767B18C /* sdk-pod-dummy.m in Sources */,
 				4FEF9E962B3F3F130076E175 /* HelloWorld.swift in Sources */,
 			);
