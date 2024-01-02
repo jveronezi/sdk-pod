@@ -1,22 +1,22 @@
 {
   "name": "sdk-pod",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "summary": "A short description of sdk-pod.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/55355294/sdk-pod",
+  "homepage": "https://github.com/jveronezi/sdk-pod",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "55355294": "jveronezi@fullstacklabs.co"
+    "jveronezi": "jveronezi@fullstacklabs.co"
   },
   "source": {
-    "git": "https://github.com/55355294/sdk-pod.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/jveronezi/sdk-pod.git",
+    "tag": "0.1.3"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "15.0"
   },
   "source_files": "sdk-pod/Classes/**/*"
 }

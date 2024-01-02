@@ -16,7 +16,8 @@
 		30D475DF57C0C682A723231E7BCA0D14 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
 		373413256658309F9053CE22BF62077E /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		47FDBD56DD8197885198848004234180 /* sdk-pod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43100EE9FD2844E29233A058F5B95AD1 /* sdk-pod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4FEF9E962B3F3F130076E175 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEF9E952B3F3F130076E175 /* HelloWorld.swift */; };
+		4FFA14F72B44626100921588 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFA14F62B44626100921588 /* HelloWorld.swift */; };
+		4FFA14F92B4462C000921588 /* ReactNativeHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFA14F82B4462C000921588 /* ReactNativeHostView.swift */; };
 		5558B876B579BC1E79BD3D2B19148329 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
 		5C0B0FC96D8BDE763F35499C5767B18C /* sdk-pod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4FCF6FE176896428577181BCE4E36B /* sdk-pod-dummy.m */; };
@@ -87,7 +88,8 @@
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
 		4D68F67AAC225F6E500EC2038F744249 /* Pods-sdk-pod_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-sdk-pod_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		4E9B731C36334FE36FACC8D30E595319 /* sdk-pod */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "sdk-pod"; path = sdk_pod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FEF9E952B3F3F130076E175 /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HelloWorld.swift; path = "sdk-pod/Classes/HelloWorld.swift"; sourceTree = "<group>"; };
+		4FFA14F62B44626100921588 /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HelloWorld.swift; path = Pod/Classes/HelloWorld.swift; sourceTree = "<group>"; };
+		4FFA14F82B4462C000921588 /* ReactNativeHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReactNativeHostView.swift; path = Pod/Classes/ReactNativeHostView.swift; sourceTree = "<group>"; };
 		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5A29A1DF2F43EA6261D7E0CC3C4BBB23 /* Pods-sdk-pod_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-sdk-pod_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,7 +224,8 @@
 		535AF25AE5BDCC7CF767D8003C0B1E45 /* sdk-pod */ = {
 			isa = PBXGroup;
 			children = (
-				4FEF9E952B3F3F130076E175 /* HelloWorld.swift */,
+				4FFA14F62B44626100921588 /* HelloWorld.swift */,
+				4FFA14F82B4462C000921588 /* ReactNativeHostView.swift */,
 				CA81510D98AB7AE2D4B5E444C62C3457 /* Pod */,
 				251D9BE9920275DB202BEE882206EB9B /* Support Files */,
 			);
@@ -559,8 +562,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FFA14F92B4462C000921588 /* ReactNativeHostView.swift in Sources */,
 				5C0B0FC96D8BDE763F35499C5767B18C /* sdk-pod-dummy.m in Sources */,
-				4FEF9E962B3F3F130076E175 /* HelloWorld.swift in Sources */,
+				4FFA14F72B44626100921588 /* HelloWorld.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,13 +1,89 @@
-use_frameworks!
+platform :ios, '15.0'
 
-platform :ios, '10.0'
+node_modules_path = '../../node_modules'
+
+react_path = File.join(node_modules_path, 'react-native')
+react_libraries_path = File.join(react_path, 'Libraries')
+react_common_path = File.join(react_path, 'ReactCommon')
+react_new_libraries_path = File.join(react_path, 'React')
+
+# core
+coremodules_path = File.join(react_path, 'React/CoreModules')
+rctactionsheet_path = File.join(react_libraries_path, 'ActionSheetIOS')
+rctanimation_path = File.join(react_libraries_path, 'NativeAnimation')
+rctblob_path = File.join(react_libraries_path, 'Blob')
+rctimage_path = File.join(react_libraries_path, 'Image')
+rctlinking_path = File.join(react_libraries_path, 'LinkingIOS')
+rctnetwork_path = File.join(react_libraries_path, 'Network')
+rctsettings_path = File.join(react_libraries_path, 'Settings')
+rcttext_path = File.join(react_libraries_path, 'Text')
+rctvibration_path = File.join(react_libraries_path, 'Vibration')
+
+# core dependencies
+cxxreact_path = File.join(react_common_path, 'cxxreact')
+jsi_path = File.join(react_common_path, 'jsi')
+jsiexecutor_path = File.join(react_common_path, 'jsiexecutor')
+fbreactnativespec_path = File.join(react_new_libraries_path, 'FBReactNativeSpec')
+rcttypesafety_path = File.join(react_libraries_path, 'TypeSafety')
+yoga_path = File.join(react_path, 'ReactCommon/yoga')
+react_perflogger_path = File.join(react_common_path, 'reactperflogger/React-perflogger.podspec')
+react_callinvoker_path = File.join(react_common_path, 'callinvoker/React-callinvoker.podspec')
+react_runtimeexecutor_path = File.join(react_common_path, 'runtimeexecutor/React-runtimeexecutor.podspec')
+react_logger_path = File.join(react_common_path, 'logger/React-logger.podspec')
+
+
+# core dependencies' dependencies
+rctrequired_path = File.join(react_libraries_path, 'RCTRequired')
+fblazyvector_path = File.join(react_libraries_path, 'FBLazyVector')
+jsinspector_path = File.join(react_common_path, 'jsinspector')
+
+# third party dependencies
+double_conversion_spec_path = File.join(react_path, 'third-party-podspecs/DoubleConversion.podspec')
+folly_spec_path = File.join(react_path, 'third-party-podspecs/RCT-Folly.podspec')
+glog_spec_path = File.join(react_path, 'third-party-podspecs/glog.podspec')
+boost_path = File.join(react_path, 'third-party-podspecs/boost.podspec')
+# libevent_path = File.join(react_path, 'third-party-podspecs/libevent.podspec')
+
 
 target 'sdk-pod_Example' do
-  pod 'sdk-pod', :path => '../'
+  pod 'SdkPod', :path => '../'
 
-  target 'sdk-pod_Tests' do
-    inherit! :search_paths
+  # core
+  pod 'React', path: react_path
+  pod 'React-Core', :path => react_path
+  pod 'React-CoreModules', :path => coremodules_path
+  pod 'React-RCTActionSheet', :path => rctactionsheet_path
+  pod 'React-RCTAnimation', :path => rctanimation_path
+  pod 'React-RCTBlob', :path => rctblob_path
+  pod 'React-RCTImage', :path => rctimage_path
+  pod 'React-RCTLinking', :path => rctlinking_path
+  pod 'React-RCTNetwork', :path => rctnetwork_path
+  pod 'React-RCTSettings', :path => rctsettings_path
+  pod 'React-RCTText', :path => rcttext_path
+  pod 'React-RCTVibration', :path => rctvibration_path
 
-    pod 'FBSnapshotTestCase' , '~> 2.1.4'
-  end
+  # core dependencies
+  pod 'React-cxxreact', path: cxxreact_path
+  pod 'React-jsi', path: jsi_path
+  pod 'React-jsiexecutor', path: jsiexecutor_path
+  pod 'FBReactNativeSpec', path: fbreactnativespec_path
+  pod 'RCTTypeSafety', path: rcttypesafety_path
+  pod 'ReactCommon/turbomodule/core', path: react_common_path
+  pod 'Yoga', path: yoga_path
+  pod 'React-perflogger', path: react_perflogger_path
+  pod 'React-callinvoker', path: react_callinvoker_path
+  pod 'React-runtimeexecutor', path: react_runtimeexecutor_path
+  pod 'React-logger', path: react_logger_path
+
+  # core dependencies' dependencies
+  pod 'RCTRequired', path: rctrequired_path
+  pod 'FBLazyVector', path: fblazyvector_path
+  pod 'React-jsinspector', path: jsinspector_path
+
+  # third party dependencies
+  pod 'DoubleConversion', podspec: double_conversion_spec_path
+  pod 'RCT-Folly', podspec: folly_spec_path
+  pod 'glog', podspec: glog_spec_path
+  pod 'boost', podspec: boost_path
+
 end
