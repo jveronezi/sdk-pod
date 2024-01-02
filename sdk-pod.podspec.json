@@ -1,6 +1,6 @@
 {
   "name": "SdkPod",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "summary": "A short description of sdk-pod.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/jveronezi/sdk-pod",
@@ -13,10 +13,10 @@
   },
   "source": {
     "git": "https://github.com/jveronezi/sdk-pod.git",
-    "tag": "0.1.4"
+    "tag": "0.1.5"
   },
   "platforms": {
-    "ios": "15"
+    "ios": "15.0"
   },
   "source_files": "Pod/Classes/**/*.{h,m,swift}",
   "resources": "Pod/Assets/{SdkPod.js,assets}",
