@@ -1,5 +1,5 @@
 {
-  "name": "sdk-pod",
+  "name": "SdkPod",
   "version": "0.1.3",
   "summary": "A short description of sdk-pod.",
   "description": "TODO: Add long description of the pod here.",
@@ -18,7 +18,13 @@
   "platforms": {
     "ios": "15"
   },
-  "source_files": "sdk-pod/Classes/**/*",
+  "source_files": "Pod/Classes/**/*.{h,m,swift}",
+  "resources": "Pod/Assets/{SdkPod.js,assets}",
+  "ios": {
+    "resource_bundles": {
+      "SdkPod": ["Pod/Assets/{SdkPod.js,assets}"]
+    }
+  },
   "dependencies": {
     "React": ["0.73.1"],
     "React-Core": ["0.73.1"],

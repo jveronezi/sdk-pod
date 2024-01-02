@@ -30,7 +30,8 @@ TODO: Add long description of the pod here.
   s.platform       = :ios, '15.0'
  
   s.source_files = 'Pod/Classes/**/*.{h,m,swift}'
-
+  s.resources      = 'Pod/Assets/{SdkPod.js,assets}'
+  s.ios.resource_bundles = { 'SdkPod' => ['Pod/Assets/{SdkPod.js,assets}'] }
 
   core = [
     '../node_modules/react-native/React.podspec',
