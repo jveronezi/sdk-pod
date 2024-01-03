@@ -1,5 +1,5 @@
 import XCTest
-import sdk-pod
+import SdkPod
 
 class Tests: XCTestCase {
     
