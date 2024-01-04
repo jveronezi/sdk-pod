@@ -3042,6 +3042,7 @@
 		46EB2E0001A800 /* Pods-sdk-pod_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E0001A7F0 /* Pods-sdk-pod_Example-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		46EB2E0001A860 /* Pods-sdk-pod_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E0001A850 /* Pods-sdk-pod_Example-dummy.m */; };
 		4F6AEB5E2B45CD580023F9AA /* HelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F6AEB5D2B45CD580023F9AA /* HelloWorld.m */; };
+		4F8584182B47095300F0345F /* ViewModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8584172B47095300F0345F /* ViewModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -8682,6 +8683,8 @@
 		46EB2E0001A850 /* Pods-sdk-pod_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-sdk-pod_Example-dummy.m"; sourceTree = "<group>"; };
 		4F6AEB5C2B45CD170023F9AA /* HelloWorld.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorld.h; path = Pod/Classes/HelloWorld.h; sourceTree = "<group>"; };
 		4F6AEB5D2B45CD580023F9AA /* HelloWorld.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HelloWorld.m; path = Pod/Classes/HelloWorld.m; sourceTree = "<group>"; };
+		4F8584162B47070F00F0345F /* ViewModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewModule.h; path = Pod/Classes/ViewModule.h; sourceTree = "<group>"; };
+		4F8584172B47095300F0345F /* ViewModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewModule.m; path = Pod/Classes/ViewModule.m; sourceTree = "<group>"; };
 		5030ABFB989DF4186E0DD949B7B5D529 /* SdkPod */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = SdkPod; path = libSdkPod.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA54A19E2135E09B9C8C0767385FD3A /* React-graphics */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "React-graphics"; path = "libReact-graphics.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D5A56E763D6E7C4FBE797565062EEA /* React-nativeconfig */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "React-nativeconfig"; path = "libReact-nativeconfig.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -11363,6 +11366,8 @@
 				46EB2E00019560 /* Support Files */,
 				4F6AEB5C2B45CD170023F9AA /* HelloWorld.h */,
 				4F6AEB5D2B45CD580023F9AA /* HelloWorld.m */,
+				4F8584162B47070F00F0345F /* ViewModule.h */,
+				4F8584172B47095300F0345F /* ViewModule.m */,
 			);
 			name = SdkPod;
 			path = ../..;
@@ -18843,6 +18848,7 @@
 			files = (
 				46EB2E0000BF50 /* CocoaAsyncSocket-dummy.m in Sources */,
 				46EB2E0000BE90 /* GCDAsyncSocket.m in Sources */,
+				4F8584182B47095300F0345F /* ViewModule.m in Sources */,
 				46EB2E0000BEA0 /* GCDAsyncUdpSocket.m in Sources */,
 				4F6AEB5E2B45CD580023F9AA /* HelloWorld.m in Sources */,
 			);
