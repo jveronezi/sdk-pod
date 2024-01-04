@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SdkPod'
-  s.version          = '0.1.9'
+  s.version          = '0.2.0'
   s.summary          = 'A short description of sdk-pod.'
 
 # This description is used to generate tags and improve search results.
@@ -67,6 +67,9 @@ TODO: Add long description of the pod here.
     '../node_modules/react-native/ReactCommon/reactperflogger/React-perflogger.podspec',
     '../node_modules/react-native/ReactCommon/runtimeexecutor/React-runtimeexecutor.podspec',
     '../node_modules/react-native/ReactCommon/logger/React-logger.podspec',
+    '../node_modules/react-native/ReactCommon/hermes/React-hermes.podspec',
+    '../node_modules/react-native/ReactCommon/react/debug/React-debug.podspec',
+    '../node_modules/react-native/ReactCommon/react/utils/React-utils.podspec',
   ]
 
   third_party_dependencies = [
