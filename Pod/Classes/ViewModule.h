@@ -9,7 +9,8 @@
 #import <React/RCTBridgeModule.h>
 #import <React/RCTEventEmitter.h>
 #import <React/RCTRootView.h>
+#import <UIKit/UIKit.h>
 
 @interface ViewModule : NSObject <RCTBridgeModule>
-
+    - (UIView *)loadSdkView;
 @end

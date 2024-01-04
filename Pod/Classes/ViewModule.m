@@ -14,7 +14,7 @@
 // This macro exports the module and makes it available in React Native
 RCT_EXPORT_MODULE();
 
-- (UIView *)loadView {
+- (UIView *)loadSdkView {
     NSURL *jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"SdkPod" fallbackResource:nil];
     
     // Here you can set initial properties if needed
