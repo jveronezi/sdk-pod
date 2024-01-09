@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SdkPod'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'A short description of sdk-pod.'
 
 # This description is used to generate tags and improve search results.
@@ -27,7 +27,7 @@ TODO: Add long description of the pod here.
   s.author           = { 'jveronezi' => 'jveronezi@fullstacklabs.co' }
   s.source           = { :git => 'https://github.com/jveronezi/sdk-pod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-  s.platform       = :ios, '15.0'
+  s.platform       = :ios, '13.4'
  
   s.source_files = 'Pod/Classes/**/*.{h,m,swift}'
   s.resources      = 'Pod/Assets/{SdkPod.js,assets}'
@@ -61,7 +61,6 @@ TODO: Add long description of the pod here.
   core_dependencies_dependencies = [
     '../node_modules/react-native/Libraries/RCTRequired/RCTRequired.podspec',
     '../node_modules/react-native/Libraries/FBLazyVector/FBLazyVector.podspec',
-    # '../node_modules/react-native/ReactCommon/jsinspector/React-jsinspector.podspec',
     '../node_modules/react-native/ReactCommon/jsinspector-modern/React-jsinspector.podspec',
     '../node_modules/react-native/ReactCommon/callinvoker/React-callinvoker.podspec',
     '../node_modules/react-native/ReactCommon/reactperflogger/React-perflogger.podspec',
